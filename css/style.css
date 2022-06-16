@@ -6,7 +6,7 @@
   --item-bg-color: rgba(191, 234, 233, .5);
 }
 
-.dark_more {
+.dark-mode {
   --text-color: #f2f2f2;
   --item-title-color: #fff;
   --btn-color: #fff;
@@ -195,8 +195,9 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  /* z-index: -3; */
+  color: #fff;
 }
+
 .label-month {
   width: 100%;
   height: 100%;
