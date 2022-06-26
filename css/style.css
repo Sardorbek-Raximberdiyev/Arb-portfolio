@@ -28,6 +28,9 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   margin: 0;
   padding: 0;
   line-height: 1.2;
@@ -471,6 +474,108 @@ body {
 }
 
 
+/* Akademnashr */
+.site-wrap {
+  flex-grow: 1;
+  background-color: var(--item-bg-color);
+}
+
+.site-wrap__container {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.hero__akadem-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-size: 50px;
+  color:var(--text-color);
+  text-align: center;
+}
+
+.hero__academ-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero__academ-list {
+  padding: 0;
+  margin: 0;
+  margin-right: 10px;
+  list-style-type: none;
+}
+
+
+.hero__academ-item {
+  white-space: nowrap;
+  align-items: center;
+}
+
+.hero__academ-item:not(:last-child) {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.hero__academ-item:last-child {
+  margin-top: 30px;
+}
+
+.hero__academ-title {
+  margin: 0;
+  font-size: 28px;
+  line-height: 30px;
+}
+
+.hero__academ-text {
+  margin: 0;
+  margin-left: 10px;
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.hero__item-list {
+  padding-top: 10px;
+}
+
+.hero__item-item {
+  display: flex;
+  list-style-type: decimal-leading-zero;
+  align-items: center;
+}
+
+.hero__item-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.hero__academ-item-title {
+  margin: 0;
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.hero__academ-item-text {
+  margin: 0;
+  margin-left: 8px;
+  font-size: 20px;
+  line-height: 22px;
+
+}
+
+.hero__img--block {
+  display: flex;
+  width: 630px;
+  height: 600px;
+  overflow: auto;
+  box-shadow: 1px 3px 20px 4px #000;
+
+}
+
+.site-wrap__img {
+  max-width: 600px;
+  height: 1300px;
+  object-fit: cover;
+}
+
 @media screen and (max-width: 1000px) {
   .main-content__hero {
     width: 100%;
@@ -647,6 +752,7 @@ body {
   }
 
   .site-header__logo-link {
+    align-items: center;
     margin-bottom: 10px;
   }
 
@@ -779,15 +885,3 @@ body {
     flex-grow: 1;
   }
 }
-/*
-@media screen and (max-width: 600px) {
-  body  {
-    overflow-x: hidden;
-  }
-
-  .hero__title {
-    font-size: 30px;
-    line-height: 36px;
-  }
-}
- */
